@@ -27,9 +27,12 @@ class GalacDays {
   }
 
   mercury(){
+
+    const age = ageFinder()
+    let mcAge = Math.round(age/.24)
     //need to give the age of a earth year in mercury years
 
-    return(true);
+    return(mcage);
   }
 
   venus(){
