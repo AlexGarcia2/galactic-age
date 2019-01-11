@@ -14,19 +14,21 @@ import {GalacDays} from './../src/galactic'
 
       let bday = new GalacDays(10,08,1989);
       // let age = bday.ageFinder()
-      let currentAge = 29;
 
       expect(bday.mercury()).toEqual(121);
     });
 
     it('should give the age of a person in venus years', function(){
 
-      expect(true).toEqual(true);
+      let bday = new GalacDays(10,08,1989);
+
+      expect(bday.venus()).toEqual(47);
     });
 
     it('should give the age of a person in mars years', function(){
+      let bday = new GalacDays(10,08,1989);
 
-      expect(true).toEqual(true);
+      expect(bday.mars()).toEqual(16);
     });
 
     it('should give the age of a person in jupiter years', function(){

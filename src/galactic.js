@@ -38,15 +38,22 @@ class GalacDays {
   }
 
   venus(){
-    //need to give back age in years of venus from eath years
+    const age = this.ageFinder();
 
-    return(true);
+    let venAge = Math.round(age/.62);
+
+   //need to give back age in years of venus from eath years
+    return(venAge);
   }
 
   mars(){
+    const age = this.ageFinder();
+
+    let venAge = Math.round(age / 1.88);
+
     // //need to give back age in years of mars from eath years
 
-    return (true);
+    return venAge;
   }
 
   jupiter(){
