@@ -9,7 +9,7 @@ class GalacDays {
 
   ageFinder(){
 
-    const birthday = (this.month, this.day, this.year);
+    // const birthday = (this.month, this.day, this.year);
 
     let currentDate = new Date();
 
@@ -20,19 +20,21 @@ class GalacDays {
 
       if (this.month <= currentMonth){
         return age;
+      }else{
+
+        return (age - 1);
       }
     // finds the age of a person in human years
-     return (age - 1);
+    console.log(age);
 
   }
 
   mercury(){
 
-    const age = ageFinder()
-    let mcAge = Math.round(age/.24)
+    const age = this.ageFinder();
+    let mcAge = Math.round(age/.24);
     //need to give the age of a earth year in mercury years
-
-    return(mcage);
+    return mcAge;
   }
 
   venus(){

@@ -7,16 +7,16 @@ import {GalacDays} from './../src/galactic'
       let age = new GalacDays(10,08,1989);
       let currentAge = 29;
 
-      expect(age.ageFinder(1989)).toEqual(currentAge);
+      expect(age.ageFinder()).toEqual(currentAge);
     });
 
     it('should give the age of a person in mercury years', function(){
 
-      let age = new GalacDays(10,08,1989);
+      let bday = new GalacDays(10,08,1989);
+      // let age = bday.ageFinder()
       let currentAge = 29;
 
-
-      expect(age.mercury()).toEqual(121);
+      expect(bday.mercury()).toEqual(121);
     });
 
     it('should give the age of a person in venus years', function(){
