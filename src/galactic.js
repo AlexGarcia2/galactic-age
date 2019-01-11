@@ -12,7 +12,7 @@ class GalacDays {
     let currentYear = currentDate.getFullYear();
     let age = (currentYear - this.year);
     // finds the age of a person in human years
-    return age;
+     return age;
 
   }
 
