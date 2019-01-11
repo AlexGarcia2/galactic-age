@@ -4,7 +4,10 @@ import {GalacDays} from './../src/galactic'
 
     it ('should find the age of a person in earth years',function(){
 
-      expect(true).toEqual(true);
+      let age = new GalacDays(10,08,1989);
+      let currentAge = 30;
+
+      expect(console.log(age.ageFiner())).toEqual(currentAge);
     });
 
     it('should give the age of a person in mercury years', function(){
