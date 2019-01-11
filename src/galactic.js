@@ -7,25 +7,25 @@ class GalacDays {
 
   }
 
-  ageFiner(){
+  ageFiner(year){
 
 
    let currentDate = new Date();
    let currentYear = currentDate.getFullYear();
 
-   const currentAge = (currentYear - this.year);
+   const age = (currentYear - year);
 
     // finds the age of a person in human years
 
     console.log(currentYear);
-    return console.log(currentAge);
+    return console.log(age);
 
   }
 
   mercury(){
     //need to give the age of a earth year in mercury years
 
-    return(true)
+    return(true);
   }
 
   venus(){
