@@ -7,17 +7,11 @@ class GalacDays {
 
   }
 
-  ageFiner(){
-
-
-   let currentDate = new Date();
-   let currentYear = currentDate.getFullYear();
-   let parsYear = parseInt(currentYear);
-   const age = (parsYear - this.year);
-
+  ageFinder(){
+    let currentDate = new Date();
+    let currentYear = currentDate.getFullYear();
+    let age = (currentYear - this.year);
     // finds the age of a person in human years
-    console.log(age);
-    console.log(currentYear);
     return age;
 
   }
