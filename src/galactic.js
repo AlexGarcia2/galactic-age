@@ -8,11 +8,21 @@ class GalacDays {
   }
 
   ageFinder(){
+
+    const birthday = (this.month, this.day, this.year);
+
     let currentDate = new Date();
+
+    let currentMonth = currentDate.getMonth()+1;
+
     let currentYear = currentDate.getFullYear();
     let age = (currentYear - this.year);
+
+      if (this.month <= currentMonth){
+        return age;
+      }
     // finds the age of a person in human years
-     return age;
+     return (age - 1);
 
   }
 

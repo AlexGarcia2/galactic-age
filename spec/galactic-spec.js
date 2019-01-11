@@ -5,7 +5,7 @@ import {GalacDays} from './../src/galactic'
     it ('should find the age of a person in earth years',function(){
 
       let age = new GalacDays(10,08,1989);
-      let currentAge = 30;
+      let currentAge = 29;
 
       expect(age.ageFinder(1989)).toEqual(currentAge);
     });
