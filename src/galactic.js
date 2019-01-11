@@ -43,23 +43,27 @@ class GalacDays {
     let venAge = Math.round(age/.62);
 
    //need to give back age in years of venus from eath years
-    return(venAge);
+    return venAge;
   }
 
   mars(){
     const age = this.ageFinder();
 
-    let venAge = Math.round(age / 1.88);
+    let marAge = Math.round(age / 1.88);
 
     // //need to give back age in years of mars from eath years
 
-    return venAge;
+    return marAge;
   }
 
   jupiter(){
+    const age = this.ageFinder();
+
+    let jupAge = Math.round(age / 11.86);
+
     ////need to give back age in years of jupiter from eath years
 
-    return (true);
+    return jupAge;
   }
 
   lifeExpect(){

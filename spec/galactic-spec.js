@@ -28,12 +28,13 @@ import {GalacDays} from './../src/galactic'
     it('should give the age of a person in mars years', function(){
       let bday = new GalacDays(10,08,1989);
 
-      expect(bday.mars()).toEqual(16);
+      expect(bday.mars()).toEqual(15);
     });
 
     it('should give the age of a person in jupiter years', function(){
+      let bday = new GalacDays(10,08,1989);
 
-      expect(true).toEqual(true);
+      expect(bday.mars()).toEqual(2);
     });
 
     it('should give the life expectancy of a person on given planet', function(){
