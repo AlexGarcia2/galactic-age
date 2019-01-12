@@ -4,6 +4,8 @@ class GalacDays {
     this.month = month;
     this.day = day;
     this.year = year;
+    this.male = 76.3;
+    this.female = 81.1;
 
   }
 
@@ -58,19 +60,38 @@ class GalacDays {
 
   jupiter(){
     const age = this.ageFinder();
-
     let jupAge = Math.round(age / 11.86);
-
     ////need to give back age in years of jupiter from eath years
-
     return jupAge;
   }
 
-  lifeExpect(){
-    // give life expectancy of person give the age and what planet they are on. if they are past the life expectancy of the planet give them back their age.
+  jupMaleExpect(){
+    const jupAge = this.jupiter();
+    let deathAge = Math.round(jupAge/this.male);
 
-    return (true);
+    return deathAge;
   }
 
+  jupfemaleExpect(){
+    const jupAge = this.jupiter();
+    let deathAge = Math.round(jupAge/this.female);
+
+    return deathAge;
+  }
+
+
 }
+
 export {GalacDays};
+
+
+
+
+
+
+
+// lifeExpect(){
+  //   // give life expectancy of person give the age and what planet they are on. if they are past the life expectancy of the planet give them back their age.
+  //
+  //   return (true);
+  // }

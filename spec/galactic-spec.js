@@ -34,12 +34,14 @@ import {GalacDays} from './../src/galactic'
     it('should give the age of a person in jupiter years', function(){
       let bday = new GalacDays(10,08,1989);
 
-      expect(bday.mars()).toEqual(2);
+      expect(bday.jupiter()).toEqual(2);
     });
 
-    it('should give the life expectancy of a person on given planet', function(){
+    it('should give the average life expectancy of a males on jupiter', function(){
 
       expect(true).toEqual(true);
-    })
+    });
+
+    it('should give the average life expectancy of a person on ')
 
   });
