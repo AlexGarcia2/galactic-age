@@ -10,52 +10,69 @@ class GalacDays {
   }
 
   ageFinder(){
-
     // const birthday = (this.month, this.day, this.year);
 
     let currentDate = new Date();
-
     let currentMonth = currentDate.getMonth()+1;
-
     let currentYear = currentDate.getFullYear();
     let age = (currentYear - this.year);
-
       if (this.month <= currentMonth){
         return age;
       }else{
-
         return (age - 1);
       }
     // finds the age of a person in human years
-    console.log(age);
-
   }
 
   mercury(){
-
     const age = this.ageFinder();
     let mcAge = Math.round(age/.24);
     //need to give the age of a earth year in mercury years
     return mcAge;
   }
 
+  mercMaleExpect(){
+    let deathAge = Math.round(this.male/.24);
+    return deathAge;
+  }
+
+  mercFemaleExpect(){
+    let deathAge = Math.round(this.female/.24);
+    return deathAge;
+  }
+
   venus(){
     const age = this.ageFinder();
-
     let venAge = Math.round(age/.62);
-
    //need to give back age in years of venus from eath years
     return venAge;
   }
 
+  venMaleExpect(){
+    let deathAge = Math.round(this.male/.62);
+    return deathAge;
+  }
+
+  venFemaleExpect(){
+    let deathAge = Math.round(this.female/.62);
+    return deathAge;
+  }
+
   mars(){
     const age = this.ageFinder();
-
     let marAge = Math.round(age / 1.88);
-
     // //need to give back age in years of mars from eath years
-
     return marAge;
+  }
+
+  marMaleExpect(){
+    let deathAge = Math.round(this.male/1.88);
+    return deathAge;
+  }
+
+  marFemaleExpect(){
+    let deathAge = Math.round(this.female/1.88);
+    return deathAge;
   }
 
   jupiter(){
@@ -66,32 +83,15 @@ class GalacDays {
   }
 
   jupMaleExpect(){
-    const jupAge = this.jupiter();
-    let deathAge = Math.round(jupAge/this.male);
-
+    let deathAge = Math.round(this.male/11.86);
     return deathAge;
   }
 
-  jupfemaleExpect(){
-    const jupAge = this.jupiter();
-    let deathAge = Math.round(jupAge/this.female);
-
+  jupFemaleExpect(){
+    let deathAge = Math.round(this.female/11.86);
     return deathAge;
   }
-
 
 }
 
 export {GalacDays};
-
-
-
-
-
-
-
-// lifeExpect(){
-  //   // give life expectancy of person give the age and what planet they are on. if they are past the life expectancy of the planet give them back their age.
-  //
-  //   return (true);
-  // }

@@ -25,23 +25,20 @@ import {GalacDays} from './../src/galactic'
       expect(bday.venus()).toEqual(47);
     });
 
-    it('should give the age of a person in mars years', function(){
+    it('should give the age of a person in mars years and the life expectancy of a male or female', function(){
       let bday = new GalacDays(10,08,1989);
 
       expect(bday.mars()).toEqual(15);
+      expect(bday.marMaleExpect()).toEqual(43);
+      expect(bday.marMaleExpect()).toEqual(41);
     });
 
-    it('should give the age of a person in jupiter years', function(){
+    it('should give the age of a person in jupiter years and the life expectancy of that person ethier male or female', function(){
       let bday = new GalacDays(10,08,1989);
 
       expect(bday.jupiter()).toEqual(2);
+      expect(bday.jupMaleExpect()).toEqual(7);
+      expect(bday.jupMaleExpect()).toEqual(6);
     });
 
-    it('should give the average life expectancy of a males on jupiter', function(){
-
-      expect(true).toEqual(true);
-    });
-
-    it('should give the average life expectancy of a person on ')
-
-  });
+});
