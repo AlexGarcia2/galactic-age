@@ -1,9 +1,10 @@
 const webpackConfig = require('./webpack.config.js');
 
+
 module.exports = function(config) {
   config.set({
     basePath: '',
-    frameworks: ['jquery-3.2.1', 'jasmine'],
+    frameworks: ['jasmine'],
     files: [
       'src/*.js',
       'spec/*spec.js'
@@ -28,6 +29,7 @@ module.exports = function(config) {
     colors: true,
     logLevel: config.LOG_INFO,
     autoWatch: true,
+    usePolling: true, //important!
     browsers: ['Chrome'],
     singleRun: false,
     concurrency: Infinity

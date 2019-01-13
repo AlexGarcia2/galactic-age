@@ -33,12 +33,30 @@ class GalacDays {
 
   mercMaleExpect(){
     let deathAge = Math.round(this.male/.24);
-    return deathAge;
+
+    let currentAge = this.ageFinder()
+
+    if (deathAge === currentAge){
+      return currentAge;
+    }else{
+
+      return deathAge;
+    }
+
   }
 
   mercFemaleExpect(){
     let deathAge = Math.round(this.female/.24);
-    return deathAge;
+
+    let currentAge = this.ageFinder()
+
+    if (deathAge === currentAge){
+      return currentAge;
+    }else{
+
+      return deathAge;
+    }
+
   }
 
   venus(){
@@ -50,12 +68,28 @@ class GalacDays {
 
   venMaleExpect(){
     let deathAge = Math.round(this.male/.62);
-    return deathAge;
+
+    let currentAge = this.ageFinder()
+
+    if (deathAge === currentAge){
+      return currentAge;
+    }else{
+
+      return deathAge;
+    }
   }
 
   venFemaleExpect(){
     let deathAge = Math.round(this.female/.62);
-    return deathAge;
+
+    let currentAge = this.ageFinder()
+
+    if (deathAge === currentAge){
+      return currentAge;
+    }else{
+
+      return deathAge;
+    }
   }
 
   mars(){
@@ -67,12 +101,29 @@ class GalacDays {
 
   marMaleExpect(){
     let deathAge = Math.round(this.male/1.88);
-    return deathAge;
+
+    let currentAge = this.ageFinder()
+
+    if (deathAge === currentAge){
+      return currentAge;
+    }else{
+
+      return deathAge;
+    }
+
   }
 
   marFemaleExpect(){
     let deathAge = Math.round(this.female/1.88);
-    return deathAge;
+
+    let currentAge = this.ageFinder()
+
+    if (deathAge === currentAge){
+      return currentAge;
+    }else{
+
+      return deathAge;
+    }
   }
 
   jupiter(){
@@ -84,12 +135,28 @@ class GalacDays {
 
   jupMaleExpect(){
     let deathAge = Math.round(this.male/11.86);
-    return deathAge;
+
+    let currentAge = this.ageFinder()
+
+    if (deathAge === currentAge){
+      return currentAge;
+    }else{
+
+      return deathAge;
+    }
   }
 
   jupFemaleExpect(){
     let deathAge = Math.round(this.female/11.86);
-    return deathAge;
+
+    let currentAge = this.ageFinder()
+
+    if (deathAge === currentAge){
+      return currentAge;
+    }else{
+
+      return deathAge;
+    }
   }
 
 }
